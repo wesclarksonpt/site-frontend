@@ -11,7 +11,7 @@ export default function ContactForm() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    const res = await fetch('http://localhost:4000/api/contact', {
+    const res = await fetch('https://formspree.io/f/xvgawqwa', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(form),
@@ -26,6 +26,7 @@ export default function ContactForm() {
       <form onSubmit={handleSubmit} className="max-w-md mx-auto space-y-4">
         <input
           type="text"
+	  name="name"
           placeholder="Name"
           value={form.name}
           onChange={(e) => setForm({ ...form, name: e.target.value })}
@@ -33,6 +34,7 @@ export default function ContactForm() {
         />
         <input
           type="email"
+	  name="email"
           placeholder="Email"
           value={form.email}
           onChange={(e) => setForm({ ...form, email: e.target.value })}
@@ -40,6 +42,7 @@ export default function ContactForm() {
         />
         <input
           type="tel"
+	  name="tel"
           placeholder="Phone Number"
           value={form.phone}
           onChange={(e) => setForm({ ...form, phone: e.target.value })}
@@ -47,6 +50,7 @@ export default function ContactForm() {
         />
         <input
           type="text"
+	  name="zipCode"
           placeholder="ZIP Code"
           value={form.zipCode}
           onChange={(e) => setForm({ ...form, zipCode: e.target.value })}
@@ -54,6 +58,7 @@ export default function ContactForm() {
         />
         <textarea
           placeholder="What’s your goal?"
+	  name="goal"
           value={form.goal}
           onChange={(e) => setForm({ ...form, goal: e.target.value })}
           className="border w-full p-2"
