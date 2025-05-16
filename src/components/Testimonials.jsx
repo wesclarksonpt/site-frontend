@@ -6,17 +6,17 @@ const testimonialsData = [
   {
     name: 'John D.',
     feedback: 'Best trainer ever! He forced me to workout, and stopped me from eating junk food -- it was terrible! But great for my health!',
-    image: "/images/image4.png",
+    image: "images/image4.png",
   },
   {
     name: 'Sarah M.',
     feedback: "My kids complain about going to training, but they always give me a hug and tell me they love me afterwards. Wes is great with kids!",
-    image: "/images/image3.png",
+    image: "images/image3.png",
   },
   {
     name: 'Ali R.',
     feedback: "The good thing is, Wes will come to you. The bad thing is, now you can't escape because he knows where you live...     but I guess that's the point",
-    image: "/images/image5.png",
+    image: "images/image5.png",
   },
 ];
 

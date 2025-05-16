@@ -13,9 +13,9 @@ export default function ServicesCarousel() {
   ];
 
   const backgroundImages = [
-    '/images/image2.png',
-    '/images/image6.png',
-    '/images/image1.png',
+    'images/image2.png',
+    'images/image6.png',
+    'images/image1.png',
   ];
 
   const [currentBgIndex, setCurrentBgIndex] = useState(0);

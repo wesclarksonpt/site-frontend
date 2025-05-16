@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section className="relative h-screen flex items-center justify-center text-white">
       <img
-        src="/public/images/hero.png"
+        src="images/hero.png"
         alt="Hero Background"
         className="absolute inset-0 w-full h-full object-cover opacity-70"
       />
